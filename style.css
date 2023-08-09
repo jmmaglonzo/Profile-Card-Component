@@ -26,6 +26,8 @@ body {
   height: 100vh;
   background-color: var(--Dark-cyan);
   font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .container {
@@ -35,56 +37,87 @@ body {
 }
 
 .card {
-  max-width: 37.5rem;
+  width: 37.5rem;
   background-color: #fff;
+  padding: 2rem;
+  position: relative;
 }
 
 .profile {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
+  top: 7rem;
+  margin-bottom: 12rem;
 }
 
 .profile img {
   border-radius: 50%;
+  margin-bottom: 2rem;
   border: 5px solid #fff;
-  margin-bottom: 1.5rem;
-  position: absolute;
 }
-
 .profile .name {
   font-size: 1.8rem;
   font-weight: 700;
+  color: var(--Very-dark-desaturatedblue);
 }
 
 .profile .age {
-  color: var(--Dark-gray);
-  font-weight: 400;
-  margin-left: 0.5rem;
+  color: var(--Dark-grayish-blue);
 }
 
 .profile .location {
-  color: var(--Dark-grayish-blue);
-  font-size: 1.5rem;
-  line-height: 2;
+  color: var(--Dark-gray);
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
-.social-media {
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg img {
+  width: 100%;
+}
+
+.socials {
   display: flex;
+  margin-top: 5rem;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 3rem;
-  padding-bottom: 3.6rem;
+  gap: 5rem;
+  font-size: 1.2rem;
 }
 
-.social-media .numbers {
+.followers,
+.likes,
+.photos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--Dark-gray);
+}
+
+.numbers {
+  font-size: 2rem;
+  color: var(--Very-dark-desaturatedblue);
   font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1.8;
+  margin-bottom: 0.5rem;
 }
 
-.social-media .stats {
-  color: var(--Dark-grayish-blue);
+.top-pattern {
+  position: absolute;
+  top: -550px;
+  left: -200px;
+}
+.bottom-pattern {
+  position: absolute;
+  bottom: -550px;
+  right: -200px;
 }
