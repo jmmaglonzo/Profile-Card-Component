@@ -27,7 +27,7 @@ body {
   background-color: var(--Dark-cyan);
   font-family: "Kumbh Sans", sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -120,4 +120,10 @@ body {
   position: absolute;
   bottom: -550px;
   right: -200px;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
